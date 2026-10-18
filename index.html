@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#17212b">
+  <meta name="xstore-api-base-url" content="https://xstore-za0x.onrender.com"><title>Xstore Mini App</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <header class="topbar"><div><div class="eyebrow">WELCOME TO</div><h1>Xstore</h1></div><button id="refresh" class="iconbtn" aria-label="Refresh">↻</button></header>
+  <main>
+    <section id="notice" class="notice hidden"></section>
+    <section id="home" class="page active">
+      <div class="hero"><div><div class="eyebrow">DIGITAL MARKETPLACE</div><h2>Find your next<br>digital product.</h2><p>Browse products available in the store.</p></div><div class="heroicon">✦</div></div>
+      <label class="search"><span>⌕</span><input id="search" placeholder="Search products" autocomplete="off"></label>
+      <div class="sectionhead"><h3>Categories</h3></div><div id="categories" class="chips"></div>
+      <div class="sectionhead"><h3>All products</h3><span id="product-count" class="muted"></span></div><div id="products" class="products"><div class="loading">Loading products…</div></div>
+    </section>
+    <section id="orders" class="page"><div class="pagehead"><h2>My orders</h2><p>Your recent purchases and payment status.</p></div><div id="orders-list" class="stack"><div class="loading">Loading orders…</div></div></section>
+    <section id="wallet" class="page"><div class="pagehead"><h2>Wallet</h2><p>Wallet balance and recent transactions.</p></div><div class="balancecard"><div>Available balance</div><strong id="balance">₹—</strong><button id="topup" class="primary">Add money in bot</button></div><div class="sectionhead"><h3>Transactions</h3></div><div id="transactions" class="stack"></div><p class="hint">Wallet top-ups and payments are processed through the existing bot and its payment verification flow.</p></section>
+    <section id="profile" class="page"><div class="pagehead"><h2>Profile</h2><p>Your Telegram account details.</p></div><div class="profilecard"><div id="avatar" class="avatar">X</div><div><strong id="name">Telegram user</strong><div id="username" class="muted"></div></div></div><div class="details"><div><span>Telegram ID</span><strong id="telegram-id">—</strong></div><div><span>Referral code</span><strong id="referral">—</strong></div><div><span>Total orders</span><strong id="order-count">0</strong></div><div><span>Account status</span><strong id="account-status">Connected</strong></div></div><button id="openbot" class="secondary wide">Open Telegram bot</button></section>
+  </main>
+  <nav class="tabbar"><button class="tab active" data-page="home"><span>⌂</span>Home</button><button class="tab" data-page="orders"><span>▤</span>Orders</button><button class="tab" data-page="wallet"><span>◉</span>Wallet</button><button class="tab" data-page="profile"><span>♙</span>Profile</button></nav>
+  <script src="/app.js"></script>
+</body></html>
